@@ -11,6 +11,13 @@ const nextConfig = {
   },
 };
 
+module.exports = {
+  future: {
+    webpack5: false,
+    strictPostcssConfiguration: false,
+  },
+};
+
 module.exports = withPWA({
   webpack: (config) => {
     config.module.rules.push({
